@@ -496,39 +496,51 @@ $rsLR=mysqli_fetch_array($resultBannerLR);
                     
                     <li>
                         <a class='linkMainMenu mainmenuTop' id='1' href="#">
-                           <i class="fa fa-car "></i> รถเก๋ง
+                           <i class="fa fa-h-square "></i> โครงการใหม่
                         </a>
                     </li>
                     <li >
                         <a class='linkMainMenu mainmenuTop' id='2' href="#">
-                          <i class="fa  fa-car "></i> รถอเนกประสงค์
+                          <i class="fa  fa-home "></i> บ้านเดียว
                         </a>
                     </li> 
                     <li>
                         <a class='linkMainMenu mainmenuTop' id='3' href="#">
-                           <i class="fa  fa-truck "></i> รถออฟโรด
+                           <i class="fa  fa-hospital-o "></i> คอนโด
                         </a>
                     </li> 
                     
                     <li>
                         <a class='linkMainMenu mainmenuTop'  id='4' href="#">
-                           <i class="fa fa-truck "></i> รถกระบะ
+                           <i class="fa fa-university"></i> ทาวน์เฮ้าส์
                         </a>
                     </li> 
                     
                     <li >
                         <a class='linkMainMenu mainmenuTop' id='9' href="#">
-                           <i class="fa fa-bus "></i> รถตู้
+                           <i class="fa fa-building"></i> อาคารพาณิชย์
                         </a>
                     </li> 
                     <li >
                         <a class='linkMainMenu mainmenuTop' id='10'href="#">
-                         <i class="fa fa-car "></i> รถสปอร์ต
+                         <i class="fa fa fa-bed"></i> อพาร์ทเมนท์
                         </a>
 					</li> 
                     <li >
                         <a class='linkMainMenu mainmenuTop' id='10xx'href="#">
-                         <i class="fa fa-car "></i> รถหรู
+                         <i class="fa fa-building "></i> สำนักงาน
+                        </a>
+					</li> 
+
+                    <!-- <li >
+                        <a class='linkMainMenu mainmenuTop' id='10xx'href="#">
+                         <i class="fa fa-industry"></i> โรงงาน
+                        </a>
+					</li>  -->
+
+                    <li >
+                        <a class='linkMainMenu mainmenuTop' id='10xx'href="#">
+                         <i class="fa fa-map-marker "></i> ที่ดิน
                         </a>
 					</li> 
                     
@@ -700,15 +712,15 @@ $rsLR=mysqli_fetch_array($resultBannerLR);
                         <div class="headline"><h2>เมนูหลัก</h2></div>
                         <ul class="list-unstyled link-list">
                             <li><a href="index.php">หน้าแรก</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="# " class="mainmenuTop" id='1'>ป้ายบิลบอร์ด</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="# " class="mainmenuTop" id='2'>ป้ายแบนเนอร์</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="#" class="mainmenuTop" id='3'>ป้าย LED</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="#" class="mainmenuTop" id='4'>ป้ายคัทเอาท์,ป้ายกองโจร</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="# " class="mainmenuTop" id='6'>ป้ายหน้าอาคาร, ร้านค้า</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="# " class="mainmenuTop" id='7'>ป้ายโรงงาน,ป้ายบริษัท,ป้ายทาวเวอร์,ป้ายโครงการ</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="#" class="mainmenuTop" id='9'>ป้ายกล่องไฟ</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="#" class="mainmenuTop" id='10'>ป้ายสติ๊กเกอร์, สติ๊กเกอร์ติดรถ</a><i class="fa fa-angle-right " ></i></li>
-                            <li><a href="# " class="mainmenuTop" id='11'>ป้ายอื่นๆ</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="# " class="mainmenuTop" id='1'>โครงการใหม่</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="# " class="mainmenuTop" id='2'>บ้านเดียว</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="#" class="mainmenuTop" id='3'>คอนโด</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="#" class="mainmenuTop" id='4'>ทาวน์เฮ้าส์</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="# " class="mainmenuTop" id='6'>อาคารพาณิชย์</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="# " class="mainmenuTop" id='7'>อพาร์ทเมนท์</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="#" class="mainmenuTop" id='9'>สำนักงาน</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="#" class="mainmenuTop" id='10'>โรงงาน</a><i class="fa fa-angle-right " ></i></li>
+                            <li><a href="# " class="mainmenuTop" id='11'>ที่ดิน</a><i class="fa fa-angle-right " ></i></li>
 
 						
                         </ul>
@@ -722,7 +734,7 @@ $rsLR=mysqli_fetch_array($resultBannerLR);
                         <div class="headline"><h2>เกี่ยวกับเรา</h2></div>
                         <ul class="list-unstyled link-list">
                             <li>
-                            <a href="#">ศูนย์รวมป้ายโฆษณา ,สื่อสิ่งพิมพ์,สื่อโฆษณา,ป้ายบิลบอร์ด,ป้าย LED,ป้าย คัทเอ้าท์,ป้ายกล่องไฟ,ป้ายสติ๊กเกอร์</a>
+                            <a href="#">ศูนย์รวมอสังหาริมทรัพย์</a>
                             </li>
 
 

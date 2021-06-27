@@ -67,7 +67,7 @@ if($conn){
 													 <section>
 														<label class="select">
 															<select name="rt_id" id='rt_id'>
-																<option value="All" selected="">เลือกประเภทรถ</option>
+																<option value="All" selected="">เลือกประเภทอสังหาฯ</option>
 																<?php 
 																while($rsTR=mysqli_fetch_array($resultTR)){
 																	?>
@@ -85,7 +85,7 @@ if($conn){
 													 <section>
 														<label class="select">
 															<select name="rf_id">
-																<option value="All" selected="">เลือกประกาศทุกประเภท</option>
+																<option value="All" selected="">เลือกประเภทประกาศ</option>
 																<?php 
 																while($rsRF=mysqli_fetch_array($resultRF)){
 																	?>

@@ -20,7 +20,7 @@
 <div class="row">
 	<div style="margin-bottom: 5px;" class="panel panel-dark-blue">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa  fa-line-chart"></i>ประกาศสื่อสิ่งพิมพ์ล่าสุด</h3>
+                                <h3 class="panel-title"><i class="fa  fa-line-chart"></i>ประกาศล่าสุด</h3>
                             </div>
                             <div class="panel-body">
 	                                <div class="row">
