@@ -5,7 +5,7 @@ extract($_REQUEST);
 $hostname="localhost";
 $username="root";
 $password="";
-$dbname="mycar2hand_db";
+$dbname="myrealestate_db";
 
 /*
 $username="xx_user";

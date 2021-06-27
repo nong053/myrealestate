@@ -5,7 +5,7 @@ $hostname="localhost";
 
 $username="root";
 $password="";
-$dbname="adskosana_db";
+$dbname="myrealestate_db";
 
 /*
 $username="dashboa2_adsuser";
