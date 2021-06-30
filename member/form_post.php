@@ -137,10 +137,10 @@ $rsRT=mysqli_fetch_array($resultRT);
 			                    <strong>
 			                   	ประกาศพิเศษหน้าแรก 
 								</strong>
-								<!-- ติดต่อผู้ดูแลระบบ(Admin)
+								ติดต่อผู้ดูแลระบบ(Admin)
 								โทร: 080-992-6565
-								Email: kosit.arom@gmail.com -->
-								ทดลองใช้งานฟรี
+								Email: kosit.arom@gmail.com
+								<!-- ทดลองใช้งานฟรี -->
 			                </div>
 			                
 							<div class="form-group" style="display:none;">
@@ -171,7 +171,7 @@ $rsRT=mysqli_fetch_array($resultRT);
 							
 							
 							<div class="form-group">
-								<label for="rdg_title" class="col-lg-3 control-label">รายการประกาศ </label>
+								<label for="rdg_title" class="col-lg-3 control-label">ประเภทประกาศ </label>
 								<div class="col-lg-9">
 									<div class="select" id="realtyTypeArea"> </div>
 								</div>

@@ -1,8 +1,9 @@
 <?php
+
 ini_set('display_errors', '1'); //no error=0 all error=1
 include 'config.inc.php';
 
-$title = "โฆษณา";
+$title = "นับจำนวนผู้เข้าชม";
 date_default_timezone_set('Asia/Bangkok');
 
 $strSQL = " SELECT DATE FROM counter_realty where rdg_id='$rdg_id' LIMIT 0,1";

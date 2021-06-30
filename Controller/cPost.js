@@ -137,7 +137,7 @@ var postFn=function(loginType){
 			var validation = function(){
 				var validateStr="";
 				if($("select#realtyType").val()=="" || $("select#realtyType").val()==null || $("select#realtyType").val()=='All'){
-					validateStr+="เลือกประเภทสื่อสิ่งพิมพ์ด้วยค่ะ \n"
+					validateStr+="เลือกประเภทประกาศ \n"
 					
 				}
 				/*

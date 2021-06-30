@@ -123,7 +123,7 @@ $(document).ajaxStop(function() {
 					$.each(data,function(index,indexEntry){
 						if(index==0){
 							
-							$realtyFor+="<option value=\"All\">-- เลือกประเภทสื่อสิ่งพิมพ์ --</option> ";
+							$realtyFor+="<option value=\"All\">-- เลือกประเภทประกาศ --</option> ";
 							
 						}
 						if(defaultParam==indexEntry[0]){

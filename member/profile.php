@@ -3,11 +3,13 @@
 <script src="../Controller/cProfile.js"></script>
 <?php 
 include("../config.inc.php");
-//echo $ses_cus_id;
+
 $ses_cus_id=$_SESSION['ses_cus_id'];
+
 $strSQLCus="select * from customer where cus_id='$ses_cus_id'";
 $resultCus=mysqli_query($conn,$strSQLCus);
 $rsCus=mysqli_fetch_array($resultCus);
+
 ?>
 
 <div class="tag-box tag-box-v2 box-shadow shadow-effect-2">
@@ -21,7 +23,7 @@ $rsCus=mysqli_fetch_array($resultCus);
 			
 		 </div>
 		<label class="col-lg-3 control-label "  for="cus_first_name" style='text-align: left;'>
-			<img class='rounded-x' src="../control-panel/member_img/<?=$rsCus[cus_pic]?>"  border="0" width="100"/><br> 
+			<img class="img-responsive img-thumbnail"  src="../control-panel/member_img/<?=$rsCus['cus_pic']?>"  border="0" width="200"/><br> 
 		</label>
 		<div class="col-lg-5">
 			
@@ -39,7 +41,7 @@ $rsCus=mysqli_fetch_array($resultCus);
 		
 			<input type='hidden' name='actionProfile' value='reback_profile'>
 			<input type='hidden' name='cus_id' value='<?=$rsCus['cus_id']?>'>
-			<input type='submit' class='btn-u btn-u-green' value='อัปโหลดรูปภาพ'>
+			<input type='submit' class=' ' value='Upload'>
 		</div>
 	</div>
 	

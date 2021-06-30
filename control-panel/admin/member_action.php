@@ -1,6 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-<!--
+/* 
  #dev_picturetext{
 	 padding:5px;
 	 background-color:#09C;
@@ -44,11 +44,11 @@
 	padding:5px;
 	color:#FFF;
 	font-weight:bold;
-}
--->
+} */
+
 </style>
-<?
-include_once("../config.inc.php");
+<?php
+include_once("../../config.inc.php");
 $action=$_POST['action'];
 $action2=$_GET['action2'];
 //echo"action2$action2";
@@ -99,8 +99,8 @@ $file_name=$file_member;//--ต้องแก้ไข
 			copy($_FILES["cus_pic"]["tmp_name"],"../member_img/".$object_picture);//--ต้องแก้ไข
 			
 				$strSQLs="select * from customer where cus_id='$cus_id'";
-				$results=mysql_query($strSQLs);
-				$rss=mysql_fetch_array($results);
+				$results=mysqli_query($conn,$strSQLs);
+				$rss=mysqli_fetch_array($results);
 				//delete
 				$unlink="../member_img/".$rss['cus_pic'];
 				if($unlink){
@@ -108,7 +108,7 @@ $file_name=$file_member;//--ต้องแก้ไข
 				}
 				
 				$strSQL="update customer set cus_pic='$object_picture' where cus_id='$cus_id'";
-				$result=mysql_query($strSQL);
+				$result=mysqli_query($conn,$strSQL);
 				if($result){
 					if($_POST['actionProfile']=="reback_profile"){
 						echo"<script>window.location=\"../../member/index.php?page=profile\"</script>";
@@ -130,9 +130,9 @@ $file_name=$file_member;//--ต้องแก้ไข
 if($action=="edit"){
 $cus_update=date("d-m-y:h:i:s");
 $strSQL="update customer set cus_email='$cus_email',cus_user='$cus_user',cus_pass='$cus_pass',cus_company='$cus_company',cus_fullname='$cus_fullname',cus_address='$cus_address',cus_tel='$cus_tel',cus_fax='$cus_fax',cus_pic='$object_picture',cus_other='$cus_other',cus_update='$cus_update' where cus_id='$cus_id'";
-$result=mysql_query($strSQL);
+$result=mysqli_query($conn,$strSQL);
 if(!$result){
-	echo"no update".mysql_error();
+	echo"no update".mysqli_error();
 }else{
 	echo"<script>alert(\"แก้ไขข้อมูลเรียบร้อย\")</script>";
 	echo"<script>window.location=\"index.php?page=member_system&cus_id=$cus_id&detail_cus=detail_cus\"</script>";
@@ -141,8 +141,8 @@ if(!$result){
 ?>
 <div id="dev_title" >
 จัดการสถานะของสมาชิก
-</div>
-<?
+</div>	
+<?php
 $cus_id=$_GET['cus_id'];
 //echo"order_status$order_status";
 ?>
@@ -151,10 +151,10 @@ $cus_id=$_GET['cus_id'];
 <form action="member_action2.php" method="post">
 <table>
 	<tr>
-    <? /*
+    <?php /*
 	$strSQL="select * from cus_order order_id='$order_id'";
-	$result=mysql_query($strSQL);
-	$rs=mysql_fetch_array($result);*/
+	$result=mysqli_query($conn,$strSQL);
+	$rs=mysqli_fetch_array($result);*/
 	if($order_status=="Yes"){
 	$selected1="checked";}else{$selected2="checked";}
 	?>
@@ -177,6 +177,6 @@ $cus_id=$_GET['cus_id'];
 </table>
 </form>
 </div>
-<? 
+<?php 
 }
 ?>

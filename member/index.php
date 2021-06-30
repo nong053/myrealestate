@@ -23,14 +23,14 @@ date_default_timezone_set('Asia/Jakarta');
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>ศูนย์รวมสื่อสิ่งพิมพ์,สื่อโฆษณา</title>
+    <title>ศูนย์รวมอสังหาริมทรัพย์</title>
 
     <!-- Meta -->
   
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ศูนย์รวมสื่อสิ่งพิมพ์,สื่อโฆษณา">
-    <meta name="author" content="ศูนย์รวมสื่อสิ่งพิมพ์,สื่อโฆษณา">
+    <meta name="description" content="ศูนย์รวมอสังหาริมทรัพย์">
+    <meta name="author" content="ศูนย์รวมอสังหาริมทรัพย์">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../images/favicon.ico">
